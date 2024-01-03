@@ -1,0 +1,36 @@
+#include <SimpleDHT.h>
+
+int DHT_DataPin = 5;
+SimpleDHT11 dht11;
+
+void setup() {
+  Serial.begin(9600);
+}
+
+void loop() {
+  byte temperature = 0;
+  byte humidity = 0;
+  int err = SimpleDHTErrSuccess; //指示是否成功返回
+  String SensorData[2]; 
+
+  //取得資料
+  if((err = dht11.read(DHT_DataPin,&temperature,&humidity,NULL)) != SimpleDHTErrSuccess){
+    Serial.print("Read DHT11 data fail, err=");
+    Serial.println(err);
+    delay(1000);
+    return;
+  }
+  //變成字串
+  SensorData[0] =temperature;
+  SensorData[1] = humidity;
+  
+  //Serial.print("Humidity = ");   
+  Serial.println(SensorData[0]+","+SensorData[1]);   
+  //Serial.print("% , ");   
+  //Serial.print("Temperature = ");   
+  //Serial.println((int)temperature);   
+  //Serial.println("C ");   
+ 
+  delay(100); 
+
+}
