@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARInfo>
+<TargetSet version="27.0" toolVersion="10.18.5">
+<ModelTarget name="YAYA" targetId="b367bd98f3b249d0b4648f56ff9c94e2" version="14.0" toolVersion="10.18.5" bbox="-0.090424 0.032231 0.086481 0.465030 0.470033 0.310127" previewImage="b367bd98f3b249d0b4648f56ff9c94e2_preview.jpg"/>
+
+</TargetSet>
+
+<Assembly name="YAYAs_assembly" assemblyId="ea1ea2e71f1543a4b3682f2fa35a2a3d">
+<Part name="YAYA" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="GuideView_0000" translation="0.0633911 0.179178 1.17" rotation="AD: 1 -0.00810094 0.0883245 190.44" image="YAYA_GuideView_0000.png" trained="no">
+
+</EntryPoint>
+
+</Assembly>
+
+</QCARInfo>
